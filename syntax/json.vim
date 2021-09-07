@@ -113,14 +113,14 @@ if version >= 508 || !exists("did_json_syn_inits")
   hi def link jsonKeyword		Label
 
 	if (!exists("g:vim_json_warnings") || g:vim_json_warnings==1)
-		hi def link jsonNumError					HSLVisual
-		hi def link jsonCommentError				HSLVisual
-		hi def link jsonSemicolonError			HSLVisual
-		hi def link jsonTrailingCommaError		HSLVisual
-		hi def link jsonMissingCommaError		HSLVisual
-		hi def link jsonStringSQError				HSLVisual
-		hi def link jsonNoQuotesError				HSLVisual
-		hi def link jsonTripleQuotesError		HSLVisual
+		hi def link jsonNumError			WarningMsg
+		hi def link jsonCommentError		Comment
+		hi def link jsonSemicolonError		WarningMsg
+		hi def link jsonTrailingCommaError	WarningMsg
+		hi def link jsonMissingCommaError	WarningMsg
+		hi def link jsonStringSQError		WarningMsg
+		hi def link jsonNoQuotesError		WarningMsg
+		hi def link jsonTripleQuotesError	WarningMsg
   endif
   hi def link jsonQuote			Quote
   hi def link jsonNoise			Noise
